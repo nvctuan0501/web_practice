@@ -1,0 +1,26 @@
+.card {
+  width: 30%;
+  border: 1px solid #000000;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &__img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__body {
+    padding: 5px 20px 20px 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+}

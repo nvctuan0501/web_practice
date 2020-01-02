@@ -1,46 +1,12 @@
 .btn {
   transition: all 0.3s;
   cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
 
-  &.btn-hamburger {
-    background-color: transparent;
-    padding: 13.5px 16px;
-    position: absolute;
-    z-index: 99;
-    right: 0;
-    top: 0;
-    &.open {
-      background-color: $black;
-
-      .line:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-        background-color: $white;
-      }
-      .line:nth-child(2) {
-        opacity: 0;
-      }
-      .line:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-        background-color: $white;
-      }
-    }
-
-    .line {
-      background-color: $black;
-      width: 20px;
-      height: 2px;
-      display: block;
-      transition: all 0.3s ease-in;
-
-      &:not(:first-child) {
-        margin-top: 5px;
-      }
-    }
-  }
-
-  &.btn-menu {
-    background-color: $white;
-    color: $light-grey;
+  &--primary {
+    background-color: $red;
+    color: $white;
 
     &:hover {
       background-color: $middle-grey;
@@ -50,14 +16,4 @@
     }
   }
 
-  &.btn-search {
-    background-color: $white;
-    color: $light-grey;
-    padding: 8px 16px;
-
-    &:hover {
-      background-color: $red;
-      color: $white;
-    }
-  }
 }
