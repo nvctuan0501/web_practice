@@ -1,0 +1,16 @@
+.section-hero {
+  @include bgImage("../../assets/img/parallax1.jpg", 100vh);
+}
+
+.section-lg {
+  margin-bottom: 64px;
+}
+
+.section-grey {
+  background-color: $white;
+  color: $light-grey;
+}
+
+.text-center {
+  text-align: center;
+}

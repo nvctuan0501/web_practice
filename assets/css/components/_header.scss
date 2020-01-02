@@ -1,0 +1,51 @@
+.header {
+  @include flexCenter(row);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  .hamburger--respond {
+    display: none;
+  }
+
+  .navbar {
+    font-size: 0;
+    flex: 1;
+
+    &__item {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: $body-font-size;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      @include respond-to-mobile() {
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        display: none;
+      }
+
+      &:hover {
+        background-color: $middle-grey;
+        color: $black;
+      }
+    }
+  }
+
+  @include respond-to-mobile() {
+    .hamburger--respond {
+      display: block;
+    }
+    .search--respond {
+      display: none;
+    }
+  }
+}

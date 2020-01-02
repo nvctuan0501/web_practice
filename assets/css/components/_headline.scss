@@ -1,0 +1,21 @@
+.headline {
+
+  &.headline-lg {
+    font-size: 24px;
+  }
+
+  &.headline-xlg {
+    font-size: 36px;
+  }
+  
+  &.headline-center {
+    @include center();
+  }
+
+  &.heading {
+    background-color: $black;
+    padding: 8px 24px;
+    letter-spacing: 10px;
+    color: $white;
+  }
+}
